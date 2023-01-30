@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Caudex;
+    src: url(Caudex-Regular.woff) format('woff');
+}
+.note-container{
+    border-style: outset;
+    border-color: black;
+    transition-property: all 0.2s;
+    transition-timing-function: ease-out;
+    background-color: #8e9490;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    left: 0px;
+}
+
+.note-content{
+    margin: 20px 20px 20px 0px;
+    top: 0px;
+    left: 0px;
+    color: black;
+    transition: color 0.5s, margin-left 0.5s, display 0.5s;
+    transition-timing-function: ease-out;
+    font-style: italic;
+    font-family: Caudex;
+}
+
+.vertical-bar{
+    background-color: white;
+    width: 20px;
+    height: 0px;
+    margin-left: 0px;
+    transition: height 0.3s ease-in-out, margin-left 0.5s ease-out ;
+}
+.takeaway{ 
+    font-size: 200%;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-style: italic;
+    display: block;
+    transition: all 0.7s ease-in-out;
+    margin: 0px;
+    letter-spacing: normal;
+    opacity: 0;
+    position: absolute;
+    transform: rotate(270deg);
+    -ms-transform:rotate(270deg); 
+    -moz-transform:rotate(270deg); 
+    -webkit-transform:rotate(270deg); 
+    -o-transform:rotate(270deg); 
+}
