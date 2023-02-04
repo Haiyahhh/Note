@@ -1,33 +1,32 @@
 function create_note() {
-    const note_container = document.getElementsByClassName("note-container");
-    for (let i = 0; i < note_content.length; ++i){
-
-        const note_content = document.createElement("div");
+    let note_container = document.getElementsByClassName("note-container");
+    for (let i = 0; i < note_container.length; ++i){
+        let note_content = document.createElement("div");
         note_content.classList.add("note-content");
-        note_container[i].appendChild(note_content);
         note_content.innerText = note_container[i].innerText;
         note_container[i].innerText = "";
         console.log(note_content.innerText);
-        
 
-        const vertical_bar = document.createElement("div");
-        vertical_bar.classList.add("vertical-bar");
-        note_container[i].appendChild(vertical_bar);
-
-        const takeaway = document.createElement("div");
+        let takeaway = document.createElement("div");
+        takeaway.innerText = "NOTE";
         takeaway.classList.add("takeaway");
-        takeaway.innerText = "TAKEAWAY";
+                
+        let vertical_bar = document.createElement("div");
+        vertical_bar.classList.add("vertical-bar");
+
         note_container[i].appendChild(takeaway);
+        note_container[i].appendChild(vertical_bar);
+        note_container[i].appendChild(note_content);
     }
 }
 create_note();
 
 function vertical_bar_changing(){
-    const note_container = document.getElementsByClassName("note-container");
+    let note_container = document.getElementsByClassName("note-container");
     for (let i = 0; i < note_container.length; ++i) {
-        const takeaway = note_container[i].querySelector(".takeaway");
-        const vertical_bar = takeaway.nextElementSibling;
-        const note_content = vertical_bar.nextElementSibling;        
+        let takeaway = note_container[i].querySelector(".takeaway");
+        let vertical_bar = takeaway.nextElementSibling;
+        let note_content = vertical_bar.nextElementSibling;        
         note_container[i].addEventListener("mouseover", function(){
             note_container[i].style.backgroundColor = "#379e42";
             note_container[i].style.borderColor = "#1c7301";
@@ -63,5 +62,4 @@ function vertical_bar_changing(){
 
 
 };
-
 vertical_bar_changing();
