@@ -1,7 +1,10 @@
 @font-face {
     font-family: Caudex;
     src: url(Caudex-Regular.woff) format('woff');
+
 }
+
+/**/
 .note-container{
     border-style: outset;
     border-color: black;
@@ -18,13 +21,11 @@
 
 .note-content{
     margin: 20px 20px 20px 0px;
-    top: 0px;
-    left: 0px;
     color: black;
     transition: color 0.5s, margin-left 0.5s, display 0.5s;
     transition-timing-function: ease-out;
     font-style: italic;
-    font-family: Caudex;
+    font-family: 'Caudex', serif;
 }
 
 .vertical-bar{
@@ -35,7 +36,7 @@
     transition: height 0.3s ease-in-out, margin-left 0.5s ease-out ;
 }
 .takeaway{ 
-    font-size: 200%;
+    font-size: 300%;
     font-weight: 300;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
