@@ -6,8 +6,6 @@
 
 /**/
 .note-container{
-    border-style: outset;
-    border-color: black;
     transition-property: all 0.2s;
     transition-timing-function: ease-out;
     background-color: #8e9490;
@@ -20,12 +18,12 @@
 }
 
 .note-content{
-    margin: 20px 20px 20px 0px;
+	margin: 20px 20px 20px 0px;
     color: black;
     transition: color 0.5s, margin-left 0.5s, display 0.5s;
     transition-timing-function: ease-out;
     font-style: italic;
-    font-family: 'Caudex', serif;
+    font-family: 'Caudex';
 }
 
 .vertical-bar{
