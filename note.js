@@ -1,5 +1,6 @@
 function create_note() {
-    let note_container = document.getElementsByClassName("note-container");
+    let note_container = document.querySelectorAll(".note-container");
+    console.log(note_container);
     for (let i = 0; i < note_container.length; ++i){
         let note_content = document.createElement("div");
         note_content.classList.add("note-content");
